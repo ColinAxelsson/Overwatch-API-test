@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .heroes img {
+            border-radius: 50%;
+            border: 3px solid black;
+        }
+    </style>
 </head>
 <body>
+    <img src="overfast_api_logo_full_1000.png" width="200px"  />
+    <br />
     Hello World
+    <button onclick="getHeroes()">Fetch heroes</button>
+    <div class="heroes" style="display: flex; gap: 0.5rem;flex-wrap: wrap;">
+
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        .confetti {
+            max-width: 640px;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            user-select: none;
+            z-index: -1;
+            position: absolute;
+        }
+    </style>
 </head>
-<div id="confetti-container" style="position:absolute;top:0;bottom:0;left:0;right:0;z-index:-1;"></div>
-<body><button onclick="startConfetti()">Start Confetti</button>
-    <input id="number">
+
+<body>
+    <canvas class="confetti" id="canvas"></canvas>
+    <button onclick="startConfetti()">Test Confetti</button>
+    <br />
+    <input id="number" onsubmit="submit()">
     <br />
     <button onclick="submit()">Gissa</button>
     <br />
     <h3 id="resultat"></h3>
-    
+
     <h5 id="guessCount"></h5>
 
+    <script src="confetti.js"></script>
     <script src="index2.js"></script>
 </body>
+
 </html>

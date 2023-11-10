@@ -30,34 +30,3 @@ var slumpmässigtResultat = genereraSlumptal();
 var guessCount = 0
 console.log(slumpmässigtResultat);
 
-
-function startConfetti() {
-    console.log('confetti')
-    particlesJS('confetti-container', {
-      particles: {
-        number: {
-          value: 100
-        },
-        shape: {
-          type: 'circle'
-        },
-        size: {
-          value: 5
-        },
-        move: {
-          direction: 'bottom',
-          out_mode: 'out'
-        },
-        line_linked: {
-          enable: false
-        }
-      },
-      interactivity: {
-        events: {
-          onclick: {
-            enable: false,
-          }
-        }
-      }
-    });
-  }
